@@ -1,0 +1,20 @@
+.cartao {
+    display: grid;
+
+    /* espaçamento dos cartões */
+    gap: 1rem;
+  
+    /* tamanho dos quadrados */
+    grid-auto-rows: 240px;
+  }
+  
+  /* Medium screens */
+  @media screen and (min-width: 600px) {
+    .cartao_alto {
+      grid-row: span 2 / auto;
+    }
+  
+    .cartao_gordo {
+      grid-column: span 2 / auto;
+    }
+  }
